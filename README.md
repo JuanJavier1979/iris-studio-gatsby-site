@@ -1,2 +1,2 @@
-# iris-studio-gatsby-site
-Iris Studio Gatsby Site
+# Iris Studio Gatsby Site
+Migration from WordPress first attempt. Did not include blog posts.
