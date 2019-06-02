@@ -1272,8 +1272,8 @@ Ordenar
 		  padding-top: 50px;
 		  padding-bottom: 50px;
 		  z-index: 95;
-		  position: relative;
-		  margin-bottom: 85vh;
+			position: absolute;
+			width: 100%;
 		}
 		#content {
 		  z-index: 95;
@@ -1287,8 +1287,13 @@ Ordenar
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
-        color: #adb3b8;
-      }
+			}
+			.site-footer a {
+				text-decoration: underline;
+			}
+			.menu-social-container a {
+				text-decoration: none;
+			}
       .footer-content,
       #colophon .site-info {
         font-size: 12px;
@@ -1314,12 +1319,26 @@ Ordenar
       	/*color: #aaa;*/
       }
 
-      /* MENU */
+			/* MENU */
+			@media screen and (min-width: 768px) {
+				#mast-head > div {
+					display: flex;
+				}
+				#main-menu {
+					align-self: center;
+				}
+			}
       #main-menu ul {
         list-style-type: none;
-        margin: 0;
-        text-align: right;
-      }
+        margin: 15px 0 0;
+				text-align: center;
+			}
+				@media screen and (min-width: 768px) {
+					#main-menu ul {
+						margin: 0;
+						text-align: right;
+					}
+				}
       #main-menu li {
         display: inline-block;
         font-size: 12px;
@@ -1443,10 +1462,10 @@ Ordenar
 	.site-branding {
 	    text-align: center;
 	}
-	#main-menu {
+	/*#main-menu {
     	position: absolute;
     	top: 1em;
-	}
+	}*/
 }
 
 .site-branding img {
@@ -1462,7 +1481,8 @@ Ordenar
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
     position: absolute;
     top: 0;
     z-index: 90;
@@ -1472,6 +1492,25 @@ Ordenar
 	background: url("images/photo-1429091967365-492aaa5accfe-b.jpg") no-repeat center 30% #ccc;
 	background-attachment: fixed;
 	background-size: cover;
+	position: relative;
+}
+@media screen and (min-width: 600px){
+	#hero-area {
+    height: 60vh;
+		margin-bottom: 100px;
+	}
+}
+@media screen and (min-width: 720px){
+	#hero-area {
+    height: 79vh;
+		margin-bottom: 100px;
+	}
+}
+@media screen and (min-width: 950px){
+	#hero-area {
+    height: 85vh;
+		margin-bottom: 175px;
+	}
 }
 
 #hero-area {
@@ -1491,12 +1530,17 @@ Ordenar
   line-height: 1em;
 }
 #hero-area .wrapper p.headline {
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1em;
   font-weight: 900;
   color: #fff;
   text-shadow: 0 0 10px rgba(0,0,0,.2);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+	#hero-area .wrapper p.headline {
+		font-size: 5em;
+	}
 }
 #hero-area .wrapper p.description {
   font-size: 2em;
@@ -1506,7 +1550,6 @@ Ordenar
   margin-bottom: 20px;
 }
 #hero-area .wrapper p.description strong {
-	font-family: 'Playfair Display', serif;
 	font-weight: 900;
 	font-style: italic;
 }
@@ -1538,4 +1581,12 @@ img.shadow,
 img.shadow:hover,
 .gatsby-image-wrapper.shadow:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+#content {
+	flex: 1;
 }
