@@ -1,14 +1,13 @@
 import React from "react"
 import Helmet from "react-helmet"
+import { graphql } from 'gatsby'
 
 import Header from './layout/header'
 import Footer from './layout/footer'
 
-//import indexStyles from './index.module.scss'
-import image994 from "../assets/images/featured-isotope.jpg"
-import image995 from "../assets/images/featured-zircone.png"
+import Img from 'gatsby-image'
 
-const IndexPage = () => {
+const IndexPage = (props) => {
     return (
         <div id="page" className="home-page site container">
             <Helmet>
@@ -20,6 +19,7 @@ const IndexPage = () => {
             <Header />
 
             <div id="hero-area">
+                <Img className="aligncenter size-hero" fluid={props.data.imageHero.childImageSharp.fluid} alt="" />
                 <div className="wrapper row">
                     <div className="large-12 columns">
                         <p className="headline">Hola!</p>
@@ -49,7 +49,7 @@ const IndexPage = () => {
                             <div className="row margin-bottom-80">
                                 <div className="large-12 medium-12 small-12 columns text-center">
                                     <a href="https://wordpress.org/themes/zircone/" target="_blank" rel="noopener noreferrer">
-                                        <img className="aligncenter size-full wp-image-995 shadow" src={image995} alt="Tema Zircone" width="880" height="443" />
+                                        <Img className="aligncenter size-full wp-image-995 shadow" fluid={props.data.imageZircone.childImageSharp.fluid} alt="Tema Zircone" />
                                     </a>
                                     <p></p>
                                     <h3 className="entry-title"><a href="https://wordpress.org/themes/zircone/" target="_blank" rel="noopener noreferrer">Tema Zircone</a></h3>
@@ -59,7 +59,7 @@ const IndexPage = () => {
                             <div className="row margin-bottom-60">
                                 <div className="large-12 columns text-center">
                                     <a href="https://wordpress.org/plugins/wanna-isotope/" target="_blank" rel="noopener noreferrer">
-                                        <img className="aligncenter size-full wp-image-994 shadow" src={image994} alt="Plugin isotope" width="880" height="443" />
+                                        <Img className="aligncenter size-full wp-image-994 shadow" fluid={props.data.imageIsotope.childImageSharp.fluid} alt="Plugin isotope" />
                                     </a>
                                     <p></p>
                                     <h3 className="entry-title"><a href="https://wordpress.org/plugins/wanna-isotope/" target="_blank" rel="noopener noreferrer">Plugin Isotope</a></h3>
@@ -80,3 +80,29 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const imagesQuery = graphql`
+  query {
+    imageHero: file(relativePath: { eq: "assets/images/photo-1429091967365-492aaa5accfe-b.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    imageZircone: file(relativePath: { eq: "assets/images/featured-zircone.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 880 ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    },
+    imageIsotope: file(relativePath: { eq: "assets/images/featured-isotope.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 880) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+  }
+`

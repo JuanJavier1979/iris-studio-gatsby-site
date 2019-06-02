@@ -1469,9 +1469,16 @@ Ordenar
 }
 
 #hero-area {
-	background: url("images/photo-1429091967365-492aaa5accfe-b.jpg") no-repeat center 30%;
+	background: url("images/photo-1429091967365-492aaa5accfe-b.jpg") no-repeat center 30% #ccc;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+#hero-area {
+	overflow: hidden;
+	background: none;
+	background-attachment: inherit;
+	background-size: inherit;
 }
 
 /*p.hero-description {*/
@@ -1521,9 +1528,14 @@ div.row.margin-bottom-80 {
 #page.home-page .site-title a:hover { color:#009b77; }
 #page.home-page .entry-title a:hover { color:#009b77; }
 #page section.page-title h1::after { background-color:#009b77; }
-img.shadow {
+.gatsby-image-wrapper.size-full {
+	max-width: 880px;
+}
+img.shadow,
+.gatsby-image-wrapper.shadow {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-img.shadow:hover {
+img.shadow:hover,
+.gatsby-image-wrapper.shadow:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
