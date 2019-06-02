@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 
 import Header from './layout/header'
 import Footer from './layout/footer'
@@ -10,6 +11,11 @@ import image995 from "../assets/images/featured-zircone.png"
 const IndexPage = () => {
     return (
         <div id="page" className="home-page site container">
+            <Helmet>
+                <html lang="es" />
+                <title>Iris Studio</title>
+                <meta name="description" content="Antiguo estudio de desarrollo web de Juan Javier. WordPress, front-end y ahora React, Gatsby y PWAs." />
+            </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />
 

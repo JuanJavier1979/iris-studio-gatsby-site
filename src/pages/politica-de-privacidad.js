@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { Link } from 'gatsby'
 
 import Header from './layout/header'
@@ -7,6 +8,11 @@ import Footer from './layout/footer'
 const PrivacidadPage = () => {
     return (
         <div id="page" className="site container">
+            <Helmet>
+                <html lang="es" />
+                <title>Política de Privacidad – Iris Studio</title>
+                <meta name="description" content="La política de privacidad de Iris Studio 8-)" />
+            </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />
 

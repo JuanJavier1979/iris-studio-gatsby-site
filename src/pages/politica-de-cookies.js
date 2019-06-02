@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 
 import Header from './layout/header'
 import Footer from './layout/footer'
@@ -6,6 +7,11 @@ import Footer from './layout/footer'
 const PrivacidadPage = () => {
     return (
         <div id="page" className="site container">
+            <Helmet>
+                <html lang="es" />
+                <title>Política de Cookies – Iris Studio</title>
+                <meta name="description" content="La política de ´galletas´ de Iris Studio :-)" />
+            </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />
 

@@ -7,7 +7,7 @@ const Footer = () => {
             <section className="row">
                 <div className="site-info large-12 columns">
                     <div className="menu-social-container">
-                        <ul id="menu-social" className="hide-for-small-only">
+                        <ul id="menu-social">
                             <li id="menu-item-864" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-864">
                                 <a href="https://www.twitter.com/JuanJavier1979" target="_blank" rel="noopener noreferrer">Twitter</a>
                             </li>

@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 
 import Header from './layout/header'
 import Footer from './layout/footer'
@@ -6,6 +7,11 @@ import Footer from './layout/footer'
 const ContactoPage = () => {
     return (
         <div id="page" className="site container">
+            <Helmet>
+                <html lang="es" />
+                <title>Contacto – Iris Studio</title>
+                <meta name="description" content="Contacta con Juan Javier de Iris Studio." />
+            </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />
 
