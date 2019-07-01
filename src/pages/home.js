@@ -11,7 +11,7 @@ const IndexPage = (props) => {
     return (
         <div id="page" className="home-page site container">
             <Helmet>
-                <html lang="es" />
+                <html lang="en" />
                 <title>Iris Studio</title>
                 <meta name="description" content="Old web development studio by Juan Javier. WordPress, front-end and now React, Gatsby and PWAs." />
             </Helmet>

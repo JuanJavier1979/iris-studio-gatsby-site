@@ -9,7 +9,7 @@ const PortfolioPage = () => {
     return (
         <div id="page" className="site container">
             <Helmet>
-                <html lang="es" />
+                <html lang="en" />
                 <title>Portfolio – Iris Studio</title>
                 <meta name="description" content="What I have been working on, but it's not public." />
             </Helmet>

@@ -8,7 +8,7 @@ const SobreMiPage = () => {
     return (
         <div id="page" className="site container">
             <Helmet>
-                <html lang="es" />
+                <html lang="en" />
                 <title>About me – Iris Studio</title>
                 <meta name="description" content="Read this if you want to know more about Juan Javier & Iris Studio :-)" />
             </Helmet>

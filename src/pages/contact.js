@@ -8,7 +8,7 @@ const ContactPage = () => {
     return (
         <div id="page" className="site container">
             <Helmet>
-                <html lang="es" />
+                <html lang="en" />
                 <title>Contact – Iris Studio</title>
                 <meta name="description" content="Contact Juan Javier from Iris Studio." />
             </Helmet>
