@@ -8,7 +8,7 @@ const Header = () => {
         <header id="mast-head" className="site-header" role="banner">
             <div className="row">
                 <div className="site-branding large-4 medium-4 columns">
-                    <Link to="/" rel="home">
+                    <Link to="/home/" rel="home">
                         <img src={logo} alt="Iris Studio" />
                     </Link>
                 </div>
@@ -16,19 +16,19 @@ const Header = () => {
                     <div className="menu-principal_es-container">
                         <ul id="menu-principal_es-1">
                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-575">
-                                <Link to="/">Inicio</Link>
+                                <Link to="/home/">Home</Link>
                             </li>
                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-579">
-                                <Link to="/portfolio/">Portfolio</Link>
+                                <Link to="/my-portfolio/">Portfolio</Link>
                             </li>
                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-578">
-                                <Link to="/sobre-mi/">Sobre mí…</Link>
+                                <Link to="/about-me/">About me…</Link>
                             </li>
                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-580">
-                                <Link to="/contacto/">Contacto</Link>
+                                <Link to="/contact/">Contact</Link>
                             </li>
                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-575">
-                                <Link to="/home/">English version</Link>
+                                <Link to="/">Web en español</Link>
                             </li>
                         </ul>
                     </div>
