@@ -31,8 +31,8 @@ const SobreMiPage = () => {
                                 <p>I am specially focused on WordPress and custom theme development. I am actually working on Pragmatic Agency from the UK.</p>
                                 <p>I live in Malaga, work remotely and love it.</p>
                                 <h2>About me…</h2>
-                                <p>I am developing web sites since 1999, when I started (I was young) I was using Hot Metal Pro, since then till now I've been producing websites following the evolution of this industry: from the first WYSIWYG editors, the first sites using CSS, the Flash era, XHTML &amp; la validation, then HTML5-CSS3-jQuery y lastly in love with PWAs and Gatsby.</p>
-                                <p>Previously I created sites using my own cusomt CMS, but since I discovered WordPress back in 2009 my career changed. I left PHP fights, problems implementing new features, security, etc. All that disappeared using WordPress, that has given me more freedom and time to get deeper involvement with the theme design and relations with the client.</p>
+                                <p>I am developing web sites since 1999, when I started (I was young) I was using Hot Metal Pro, since then till now I've been producing websites following the evolution of this industry: from the first WYSIWYG editors, the first sites using CSS, the Flash era, XHTML &amp; validation, then HTML5-CSS3-jQuery and lastly in love with PWAs and Gatsby.</p>
+                                <p>Previously I created sites using my own cusomt CMS, but since I discovered WordPress back in 2009 my career changed. I left PHP fights, problems implementing new features, security, etc. All that disappeared using WordPress, that CMS has given me more freedom and time to get deeper involvement with theme design and relations with the client.</p>
                             </div>
                             <footer className="entry-footer"></footer>
                         </article>
