@@ -12,6 +12,7 @@ const PortfolioPage = () => {
                 <html lang="en" />
                 <title>Portfolio – Iris Studio</title>
                 <meta name="description" content="What I have been working on, but it's not public." />
+                <link rel="alternate" href="https://www.iris-studio.es/portfolio" hrefLang="es" />
             </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />

@@ -11,6 +11,7 @@ const ContactoPage = () => {
                 <html lang="es" />
                 <title>Contacto – Iris Studio</title>
                 <meta name="description" content="Contacta con Juan Javier de Iris Studio." />
+                <link rel="alternate" href="https://www.iris-studio.es/contact" hrefLang="en" />
             </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />

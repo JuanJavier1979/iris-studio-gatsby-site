@@ -14,6 +14,7 @@ const IndexPage = (props) => {
                 <html lang="en" />
                 <title>Iris Studio</title>
                 <meta name="description" content="Old web development studio by Juan Javier. WordPress, front-end and now React, Gatsby and PWAs." />
+                <link rel="alternate" href="https://www.iris-studio.es/" hrefLang="es" />
             </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />

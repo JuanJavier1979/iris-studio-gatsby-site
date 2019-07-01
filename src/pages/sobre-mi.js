@@ -11,6 +11,7 @@ const SobreMiPage = () => {
                 <html lang="es" />
                 <title>Sobre mí – Iris Studio</title>
                 <meta name="description" content="Lee esto si quieres saber algo más sobre Juan Javier & Iris Studio :-)" />
+                <link rel="alternate" href="https://www.iris-studio.es/about-me" hrefLang="en" />
             </Helmet>
             <a className="skip-link screen-reader-text" href="#content">Skip to content</a>
             <Header />
