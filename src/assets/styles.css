@@ -273,6 +273,11 @@ th {
 		padding: 0;
 		border: none;
 	  }
+	.green-gradient {
+		background: #67B26F;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+	}
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
@@ -661,38 +666,6 @@ a:active {
   top: 3px;
   position: relative;
   margin-right: 5px;
-}
-#menu-social li a[href*="twitter.com"]::before {
-	font-family: "Genericons";
-	content: "\f202";
-}
-#menu-social li a[href*="facebook.com"]::before {
-	font-family: "Genericons";
-	content: "\f204";
-}
-#menu-social li a[href*="linkedin.com"]::before {
-	font-family: "Genericons";
-	content: "\f207";
-}
-#menu-social li a[href*="google.com"]::before {
-	font-family: "Genericons";
-	content: "\f206";
-}
-#menu-social li a[href*="pinterest.com"]::before {
-	font-family: "Genericons";
-	content: "\f209";
-}
-#menu-social li a[href*="instagram.com"]::before {
-	font-family: "Genericons";
-	content: "\f215";
-}
-#menu-social li a[href*="skype.com"]::before {
-	font-family: "Genericons";
-	content: "\f220";
-}
-#menu-social li a[href*="github.com"]::before {
-	font-family: "Genericons";
-	content: "\f200";
 }
 
 /*--------------------------------------------------------------
@@ -1261,8 +1234,12 @@ Ordenar
 	  }
 
       .site-header {
-        padding-top: 50px;
-        padding-bottom: 50px;
+		background: #67B26F;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-bottom: 125px;
 		position: relative;
 		z-index: 91;
 			}
@@ -1280,8 +1257,9 @@ Ordenar
 		  position: relative;
 		}
       .site-footer {
-        background-color: #f0f0f0;
-        background-image: none;
+		background: #67B26F;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         margin-top: 60px;
         margin-bottom: 0;
         padding-top: 45px;
@@ -1289,10 +1267,13 @@ Ordenar
         text-align: center;
 			}
 			.site-footer a {
-				text-decoration: underline;
-			}
-			.menu-social-container a {
+				color: #fff;
 				text-decoration: none;
+			}
+			.site-footer a:hover,
+			.site-footer a:focus {
+				color: #fff;
+				text-decoration: underline;
 			}
       .footer-content,
       #colophon .site-info {
@@ -1300,7 +1281,6 @@ Ordenar
       }
       .site-title {
       	font-family: "Lato", sans-serif;
-      	/*font-size: 2em;*/
       	line-height: 1em;
       	font-style: italic;
       	font-weight: 300;
@@ -1316,7 +1296,6 @@ Ordenar
       	font-family: "Lato", sans-serif;
       	font-size: 0.9em;
       	margin: 0;
-      	/*color: #aaa;*/
       }
 
 			/* MENU */
@@ -1348,19 +1327,16 @@ Ordenar
       #main-menu li:not(:last-of-type):after {
         content: "·";
         margin-right: 5px;
-        padding-left: 5px;
+		padding-left: 5px;
+		color: #fff;
       }
-      /*#main-menu li:last-child:after {
-        margin-right: 0;
-        padding-left: 0;
-        content: none;
-      }*/
       #main-menu a {
-        color: #333;
+        color: #fff;
       }
       #main-menu a:hover,
       .menu-btn:hover {
-        color: #3498db;
+		color: #fff;
+		opacity: .7;
       }
       .menu-btn {
       	cursor: pointer;
@@ -1462,10 +1438,6 @@ Ordenar
 	.site-branding {
 	    text-align: center;
 	}
-	/*#main-menu {
-    	position: absolute;
-    	top: 1em;
-	}*/
 }
 
 .site-branding img {
@@ -1473,25 +1445,23 @@ Ordenar
 }
 #main-menu a:hover,
 .menu-btn:hover {
-    color: #333;
+    color: #fff;
     opacity: .7;
 }
 #hero-area {
-    background: url("images/photo-1429091967365-492aaa5accfe-b.jpg") no-repeat center 30%;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-		margin-bottom: 50px;
-		padding-bottom: 50px;
+	background: #67B26F;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100%;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
     position: absolute;
     top: 0;
     z-index: 90;
+
 }
 
 #hero-area {
-	background: url("images/photo-1429091967365-492aaa5accfe-b.jpg") no-repeat center 30% #ccc;
-	background-attachment: fixed;
-	background-size: cover;
 	position: relative;
 }
 @media screen and (min-width: 600px){
@@ -1515,9 +1485,6 @@ Ordenar
 
 #hero-area {
 	overflow: hidden;
-	background: none;
-	background-attachment: inherit;
-	background-size: inherit;
 }
 
 /*p.hero-description {*/
@@ -1562,14 +1529,22 @@ div.row.margin-bottom-80 {
 }
 
 #page.home-page a.highlight,
-#content.site-content a { 
-	color:#009b77;
+#content.site-content a,
+#page.home-page .entry-title a { 
+	color: transparent;
+	background-color: #009b77;
+    background-image: -webkit-linear-gradient(left, #4ca2cd 0%, #67b26f 50%, transparent 50%);
+    background-position: 0 0;
+	background-size: 200% 200%;
+	-webkit-transition: .1s .2s;
+	-webkit-background-clip: text;
 }
-#content.site-content a:hover {
-	color:#adb3b8; 
+#content.site-content a:hover,
+#page.home-page .entry-title a:hover {
+	color:transparent; 
+    background-image: -webkit-linear-gradient(left, #4ca2cd 0%, #67b26f 0%, transparent 50%);
 }
 #page.home-page .site-title a:hover { color:#009b77; }
-#page.home-page .entry-title a:hover { color:#009b77; }
 #page section.page-title h1::after { background-color:#009b77; }
 .gatsby-image-wrapper.size-full {
 	max-width: 880px;

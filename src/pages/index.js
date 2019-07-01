@@ -19,7 +19,6 @@ const IndexPage = (props) => {
             <Header />
 
             <div id="hero-area">
-                <Img className="aligncenter size-hero" fluid={props.data.imageHero.childImageSharp.fluid} alt="" />
                 <div className="wrapper row">
                     <div className="large-12 columns">
                         <p className="headline">Hola!</p>
