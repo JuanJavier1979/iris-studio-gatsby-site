@@ -39,13 +39,6 @@ const IndexPage = (props) => {
                 <div id="primary" className="content-area row">
                     <main id="main" className="site-main large-12 columns">
                         <article id="post-573" className="post-573 page type-page status-publish hentry">
-                            <div className="entry-content">
-                                <div className="row margin-bottom-60">
-                                    <div className="large-12 columns text-center">
-                                        <h3>Ahora trabajo en <a href="https://www.pragmatic.agency" target="_blank" rel="noopener noreferrer" className="highlight">Pragmatic Web</a> y NO estoy disponible para trabajos freelance.</h3>
-                                    </div>
-                                </div>
-                            </div>
                             <div className="row margin-bottom-80">
                                 <div className="large-12 medium-12 small-12 columns text-center">
                                     <a href="https://wordpress.org/themes/zircone/" target="_blank" rel="noopener noreferrer">
